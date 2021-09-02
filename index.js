@@ -17,7 +17,7 @@ module.exports = function AutoPOT(mod) {
 		parse(array, title, d = '') {
 			for (let i = 0; i < array.length; i++) {
 				if (d.length >= 16000) {
-					d += `Gui data limit exceeded, some values may be missing.`;
+					d += `Límite de datos de GUI excedido, pueden faltar algunos valores.`;
 					break;
 				}
 				if (array[i].command) d += `<a href="admincommand:/@${array[i].command}">${array[i].text}</a>`;
@@ -87,7 +87,7 @@ module.exports = function AutoPOT(mod) {
 			case 'check':
 				TmpData = [];
 				TmpData.push({
-					text: `<font color="#4DD0E1" size="+24">===== Option =====</font><br>`
+					text: `<font color="#4DD0E1" size="+24">===== Opción =====</font><br>`
 				},
 				{
 					text: `<font color="#4DD0E1" size="+20">Module: </font>${TFString(config.enabled)}`
@@ -99,34 +99,34 @@ module.exports = function AutoPOT(mod) {
 					text: `<font color="#4DD0E1" size="+20">MP: </font>${TFString(config.mp)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Slaying: </font>${TFString(config.slaying)}`
+					text: `<font color="#4DD0E1" size="+20">Asesino: </font>${TFString(config.slaying)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Notice: </font>${TFString(config.notice)}`
+					text: `<font color="#4DD0E1" size="+20">Aviso: </font>${TFString(config.notice)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Delay After Resurrect: </font> <font color="#4DE19C" size="+20">${config.delayafterRes}</font>`
+					text: `<font color="#4DD0E1" size="+20">Retraso después de resucitar: </font> <font color="#4DE19C" size="+20">${config.delayafterRes}</font>`
 				},
 				{
-					text: `<br><font color="#4DD0E1" size="+24">===== Status =====</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Estado =====</font><br>`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Game: </font>${TFString(mod.game.isIngame)}`
+					text: `<font color="#4DD0E1" size="+20">Juego: </font>${TFString(mod.game.isIngame)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Loading: </font>${TFString(mod.game.isInLoadingScreen)}`
+					text: `<font color="#4DD0E1" size="+20">Cargando: </font>${TFString(mod.game.isInLoadingScreen)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Alive: </font>${TFString(mod.game.me.alive)}`
+					text: `<font color="#4DD0E1" size="+20">Vivo: </font>${TFString(mod.game.me.alive)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Mount: </font>${TFString(mod.game.me.mounted)}`
+					text: `<font color="#4DD0E1" size="+20">Montura: </font>${TFString(mod.game.me.mounted)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Combat: </font>${TFString(mod.game.me.inCombat)}`
+					text: `<font color="#4DD0E1" size="+20">Combate: </font>${TFString(mod.game.me.inCombat)}`
 				},
 				{
-					text: `<font color="#4DD0E1" size="+20">Contract: </font>${TFString(mod.game.contract.active)}`
+					text: `<font color="#4DD0E1" size="+20">Contrato: </font>${TFString(mod.game.contract.active)}`
 				},
 				{
 					text: `<font color="#4DD0E1" size="+20">Battleground: </font>${TFString(mod.game.me.inBattleground)}`
@@ -135,7 +135,7 @@ module.exports = function AutoPOT(mod) {
 					text: `<font color="#4DD0E1" size="+20">Civil Unrest: </font>${TFString(mod.game.me.zone === 152)}`
 				});
 				TmpData.push({
-					text: `<br><font color="#4DD0E1" size="+24">===== HP Potion =====</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Poción HP =====</font><br>`
 				});
 				for (let hp = 0; hp < hpPot.length; hp++)
 					if (hpPot[hp][1].amount > 0)
@@ -143,20 +143,20 @@ module.exports = function AutoPOT(mod) {
 							text: `<font color="#4DD0E1" size="+20">[${hp + 1}] ${hpPot[hp][1].name} - ${hpPot[hp][1].amount.toLocaleString()}</font><br>`
 						});
 				TmpData.push({
-					text: `<br><font color="#4DD0E1" size="+24">===== MP Potion =====</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Poción MP =====</font><br>`
 				});
 				for (let mp = 0; mp < mpPot.length; mp++)
 					if (mpPot[mp][1].amount > 0)
 						TmpData.push({
 							text: `<font color="#4DD0E1" size="+20">[${mp + 1}] ${mpPot[mp][1].name} - ${mpPot[mp][1].amount.toLocaleString()}</font><br>`
 						});
-				gui.parse(TmpData, `<font color="#E0B0FF">Auto Potion - Debug</font>`);
+				gui.parse(TmpData, `<font color="#E0B0FF">Auto Poción - Debug</font>`);
 				TmpData = [];
 				break;
 			default:
 				TmpData = [];
 				TmpData.push({
-					text: `<font color="#4DD0E1" size="+24">===== Option =====</font><br>`
+					text: `<font color="#4DD0E1" size="+24">===== Opción =====</font><br>`
 				},
 				{
 					text: `<font color="${TFColor(config.hp)}" size="+20">- HP</font><br>`,
@@ -167,15 +167,15 @@ module.exports = function AutoPOT(mod) {
 					command: `autopot mp;autopot`
 				},
 				{
-					text: `<font color="${TFColor(config.slaying)}" size="+20">- Slaying Mode</font><br>`,
+					text: `<font color="${TFColor(config.slaying)}" size="+20">- Modo Asesino</font><br>`,
 					command: `autopot slay;autopot`
 				},
 				{
-					text: `<font color="${TFColor(config.notice)}" size="+20">- Notice</font><br>`,
+					text: `<font color="${TFColor(config.notice)}" size="+20">- Aviso</font><br>`,
 					command: `autopot notice;autopot`
 				},
 				{
-					text: `<br><font color="#4DD0E1" size="+24">===== Reload JSON ======</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Recargar JSON ======</font><br>`
 				},
 				{
 					text: `<font color="#FE6F5E" size="+20">- Config.json</font><br>`,
@@ -190,7 +190,7 @@ module.exports = function AutoPOT(mod) {
 					command: `autopot reload mp`
 				});
 				TmpData.push({
-					text: `<br><font color="#4DD0E1" size="+24">===== HP Potion =====</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Poción HP =====</font><br>`
 				});
 				for (let hp = 0; hp < hpPot.length; hp++)
 					if (hpPot[hp][1].amount > 0)
@@ -198,14 +198,14 @@ module.exports = function AutoPOT(mod) {
 							text: `<font color="#4DD0E1" size="+20">[${hp + 1}] ${hpPot[hp][1].name} - ${hpPot[hp][1].amount.toLocaleString()}</font><br>`
 						});
 				TmpData.push({
-					text: `<br><font color="#4DD0E1" size="+24">===== MP Potion =====</font><br>`
+					text: `<br><font color="#4DD0E1" size="+24">===== Poción MP =====</font><br>`
 				});
 				for (let mp = 0; mp < mpPot.length; mp++)
 					if (mpPot[mp][1].amount > 0)
 						TmpData.push({
 							text: `<font color="#4DD0E1" size="+20">[${mp + 1}] ${mpPot[mp][1].name} - ${mpPot[mp][1].amount.toLocaleString()}</font><br>`
 						});
-				gui.parse(TmpData, `<font color="#E0B0FF">Auto Potion</font>`);
+				gui.parse(TmpData, `<font color="#E0B0FF">Auto Poción</font>`);
 				TmpData = [];
 				break;
 		}
@@ -222,7 +222,7 @@ module.exports = function AutoPOT(mod) {
 	});
 	
 	//Because S_PLAYER_STAT_UPDATE faster than CREATURE
-	mod.hook('S_PLAYER_STAT_UPDATE', 16, e => {
+	mod.hook('S_PLAYER_STAT_UPDATE', 17, e => {
 		if (config.enabled) {
 			useHP(Math.round(s2n(e.hp) / s2n(e.maxHp) * 100));
 			useMP(Math.round(s2n(e.mp) / s2n(e.maxMp) * 100));

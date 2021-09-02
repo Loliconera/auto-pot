@@ -1,77 +1,88 @@
 # Autopot
-This is same let-me-pot</br>
-- Support slaying mode.
-- Support for who no need use potion only in combat.</br>
-- Support Civil Unrest and Battleground potion.</br>
-- Reload file with command no need relog or restart.</br>
-- Require Caali's Proxy "tera-game-state"</br>
-# Commands
-start with "autopot" or "pot"
-```
-- pot                           //Just open GUI if you lazy full command :/
-- pot id [item link]            //Get an item id <hold Shift + Left Click> for item link
-- pot hp                        //Enable and Disable auto use hp pot
-- pot mp                        //Enable and Disable auto use mp pot *default is always enable
-- pot slaying                   //Enable and Disable auto use hp pot with slaying mode
-- pot reload hp                 //Reload HP.json file *open your inventory for update item amont
-- pot reload mp                 //Reload MP.json file *open your inventory for update item amont
-- pot reload config             //Reload Config.json file
-- pot debug                     //Show DEBUG
-```
-***HP Pot slaying mode only use in combat***</br>
-***potion will not use when on mount and in contract***</br>
-***for battleground potion you need set it by your self***</br>
-***config.json, hp.json, mp.json will generate after enter the game***</br>
+Esto es lo mismo let-me-pot</br>
+- Soporte para el modo asesino.
+- Soporte para quien no necesita usar poción solo en combate.</br>
+- Soporte para Civil Unrest y la poción de Battleground.</br>
+- Recarga del archivo por comandos (No necesita Relog o Reiniciar).</br>
+- Requiere Caali's Proxy "tera-game-state"</br>
+
+# Comandos
+Comience escribiendo el comando **autopot** o **pot**
+
+Toolbox(/8) | Descripción del comando
+--- | ---
+**pot** | abre la GUI
+**pot id** [item link] | Obtenga una ID del artículo **Mantenga Presionada la tecla Shift + Clic Izquierdo** para el enlace del artículo
+**pot hp** | Habilitar y deshabilitar el uso automático de la poción de HP
+**pot mp** | Habilitar y deshabilitar el uso automático de la poción de MP **Habilitado por defecto**
+**pot slaying** | Habilitar y deshabilitar el uso automático de la poción de HP con el modo asesino
+**pot reload hp** | Recargue el archivo HP.json **abra su inventario para actualizar la cantidad del artículo**
+**pot reload mp** | Recargue el archivo MP.json **abra su inventario para actualizar la cantidad del artículo**
+**pot reload config** | Recargar archivo Config.json
+**pot debug** | Mostrar DEBUG
+
+***HP Pot modo de asesino solo se usa en combate***</br>
+***La poción no se usará cuando esté montada y en contrato.***</br>
+***para la poción de battleground, debes configurarla tú mismo***</br>
+***config.json, hp.json, mp.json se generará después de ingresar al juego***</br>
+
+## Menú GUI
+* En el canal de chat **Toolbox(/8)** escriba el siguiente comando **pot** para mostrar una interfaz gráfica de usuario del modulo.   
+  ![](https://i.imgur.com/NVztT13.png)   
 
 # Config.json
 ```
 {
-    "enabled": true,    //enable and disable this module
-    "hp": false,        //if set true = enable auto HP pot
-    "mp": true,         //if set true = enable auto MP pot
-    "slaying": false,   //if set true = enable slaying mode
-    "notice": false     //if set true = notice your pot left, false = not notice
+    "enabled": true,    //habilitar y deshabilitar este módulo
+    "hp": false,        //Si se establece true = Habilitar el uso automático de la poción de HP
+    "mp": true,         //Si se establece true = Habilitar el uso automático de la poción de MP
+    "slaying": false,   //Si se establece true = Habilitar modo asesino
+    "notice": false     //Si se establece true = Avisar cuando tu poción se acaba, false = no avisar
 }
 ```
 # HP.json
 ```
 {
-    "6552": {                               //Your pot ID (ItemId)
-        "name": "Prime Recovery Potable",   //Your pot name for item notice if enable
-        "inBattleground": false,            //if true = this pot will use only in Civil Unrest and Battleground
-        "inCombat": true,                   //if true = only use in combat, false = always use ignore combat
-        "use_at": 80,                       //set use at with x percent
-        "slay_at": 30,                      //set use in slaying mode with x percent
-        "cd": 10                            //set pot cooldown x sec
+    "6552": {                               //Tu ID de poción (ItemId)
+        "name": "Prime Recovery Potable",   //El nombre de tu poción para el aviso de artículo si está habilitado
+        "inBattleground": false,            //Si se establece true = esta poción solo se usará en Civil Unrest y Battleground
+        "inCombat": true,                   //Si se establece true = solo usar en combate, false = usar siempre ignorar combate
+        "use_at": 80,                       //Establecer uso con x porcentaje
+        "slay_at": 30,                      //Establecer el uso en el modo asesino con x porcentaje
+        "cd": 10                            //Establecer el tiempo de reutilización de la poción x segundo
     }
 }
 ```
 # MP.json
 ```
 {
-    "6562": {                                   //Your pot ID (ItemId)
-        "name": "Prime Replenishment Potable",  //Your pot name for item notice if enable
-        "inBattleground": false,                //if true = this pot will use only in Civil Unrest and Battleground
-        "inCombat": false,                      //if true = only use in combat, false = always use ignore combat
-        "use_at": 50,                           //set use at with x percent
-        "cd": 10                                //set pot cooldown x sec
+    "6562": {                                   //Tu ID de poción (ItemId)
+        "name": "Prime Replenishment Potable",  //El nombre de tu poción para el aviso de artículo si está habilitado
+        "inBattleground": false,                //Si se establece true = esta poción solo se usará en Civil Unrest y Battleground
+        "inCombat": false,                      //Si se establece true = solo usar en combate, false = usar siempre ignorar combate
+        "use_at": 50,                           //Establecer uso con x porcentaje
+        "cd": 10                                //Establecer el tiempo de reutilización de la poción x segundo
     }
 }
 ```
-# Helpful 
-[Something Helpful for new users](https://github.com/Fukki/auto-pot/issues/6)
+## Créditos
+- Original de Fukky -> https://github.com/Fukki/auto-pot
+- Esta es una bifurcación de **Fukki** auto-pot.  
 
-# Q & A
-Q: my *.json got replace after edit.</br>
-A: check your syntax before save because *.json will replace if system cant read.</br>
+# Utilidad 
+[Algo útil para nuevos usuarios](https://github.com/Fukki/auto-pot/issues/6)
 
-Q: after reload *.json with in game command auto-pot not work.</br>
-A: update your inventory by open it one time or use item one time.</br>
+# Preguntas & Respuestas
+Pregunta: mi archivo *.json se reemplazó después de editar.</br>
+Respuesta: verifique su sintaxis antes de guardar el archivo porque *.json reemplazará si el sistema no puede leer.</br>
 
-A: got the error.</br>
-Q: check your proxy and this module has up to date or not.</br>
+Pregunta: después de recargar el archivo *.json con el comando del juego auto-pot no funciona.</br>
+Respuesta: actualice su inventario abriéndolo una vez o use el artículo una vez.</br>
 
-A: how to get item link for "pot id XXX"</br>
-B: just hold left shift + left click on item</br>
+Pregunta: tengo un error.</br>
+Respuesta: verifique que su Toolbox y el módulo Auto-Pot esté actualizado o no.</br>
+
+Pregunta: cómo obtener el enlace del artículo para "pot id XXXX"</br>
+Respuesta: solo mantenga presionada la tecla Shift izquierda + clic izquierdo en el articulo</br>
 ![image](https://user-images.githubusercontent.com/26898177/52502964-bb9c5c00-2c16-11e9-9019-0de08f5a06fb.png)</br>
-***Any problem pls open Issues**
+***Cualquier problema, abra Issues**

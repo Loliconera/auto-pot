@@ -1,16 +1,18 @@
 {
-	"files": {
-		"index.js": "120bb340ac55d908bf5168d2c2f99cf7ba271cbdd6ef2eed5401670931feb639"
-	},
-	"defs": {
-		"C_ADMIN": 1,
-		"C_CONFIRM_UPDATE_NOTIFICATION": "raw",
-		"C_PLAYER_LOCATION": 5,
-		"C_USE_ITEM": 3,
-		"S_ANNOUNCE_UPDATE_NOTIFICATION": 1,
-		"S_ITEMLIST": 5,
-		"S_PLAYER_STAT_UPDATE": 16,
-		"S_RETURN_TO_LOBBY": "raw",
-		"S_SPAWN_ME": 3
-	}
+    "files": {
+        "README.md": "c145fb23828eac31597d1cae5e5be1af80a9d3f531dae4e8f286efb96cb088dd",
+        "index.js": "f410920e7805a2b2972154a2e83eaedd971b0ba51159ad9a378f14d7eac38087",
+        "module.json": "6c22005983e8c6e745965e0201f42eac5c4d055a72497ff49d788b82eb40df6e"
+    },
+    "defs": {
+        "C_ADMIN": 1,
+        "C_CONFIRM_UPDATE_NOTIFICATION": "raw",
+        "C_PLAYER_LOCATION": 5,
+        "C_USE_ITEM": 3,
+        "S_ANNOUNCE_UPDATE_NOTIFICATION": 1,
+        "S_ITEMLIST": 5,
+        "S_PLAYER_STAT_UPDATE": 17,
+        "S_RETURN_TO_LOBBY": "raw",
+        "S_SPAWN_ME": 3
+    }
 }
