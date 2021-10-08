@@ -1,8 +1,0 @@
-{
-    "enabled": true,
-    "hp": true,
-    "mp": true,
-    "slaying": false,
-    "notice": true,
-    "delayafterRes": 2000
-}
