@@ -1,9 +1,8 @@
 {
     "files": {
         "README.md": "c145fb23828eac31597d1cae5e5be1af80a9d3f531dae4e8f286efb96cb088dd",
-        "config.json": "a29f88e4ee70b241ff0d5c4b66d6e4aa6dbf4a2187001a6eceaa6e76bdb6fa2d",
         "hp.json": "203d32412e7fc5af31b907fd5c26c798dfa0d216cedcaebc30cda2bf90497a5c",
-        "index.js": "933bb901b45a1fbd5cbbbed2d89ea3b495d03d328fd801985d9fb8acf35a342d",
+        "index.js": "429ca69e8a9acffd93e727b1dcb24c29e6971b286a26ce73f8997ce91b1f1f45",
         "module.json": "6c22005983e8c6e745965e0201f42eac5c4d055a72497ff49d788b82eb40df6e",
         "mp.json": "4924b45044f299d5eeaf78fdcb032c65c766a65751e6a76b23dc2f469badc1b0"
     },
@@ -13,7 +12,7 @@
         "C_PLAYER_LOCATION": 5,
         "C_USE_ITEM": 3,
         "S_ANNOUNCE_UPDATE_NOTIFICATION": 1,
-        "S_ITEMLIST": 6,
+        "S_ITEMLIST": 7,
         "S_PLAYER_STAT_UPDATE": 17,
         "S_RETURN_TO_LOBBY": "raw",
         "S_SPAWN_ME": 3
