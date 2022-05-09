@@ -2,12 +2,11 @@
     "files": {
         "README.md": "c145fb23828eac31597d1cae5e5be1af80a9d3f531dae4e8f286efb96cb088dd",
         "hp.json": "203d32412e7fc5af31b907fd5c26c798dfa0d216cedcaebc30cda2bf90497a5c",
-        "index.js": "8d24b0eb7702044f25b9ec1d6274ce65d3dc1002cac9f71a44d6e88b27bdc76b",
-        "module.json": "6c22005983e8c6e745965e0201f42eac5c4d055a72497ff49d788b82eb40df6e",
+        "index.js": "ab95d6865116632d5fa9bef7f7ba8e0da9ce15a450fdb39d0728fd666e485350",
+        "module.json": "1f5f91317bcc4f436e543c72b779931a5edb492154fbe93feaa2b4d0809f0453",
         "mp.json": "4924b45044f299d5eeaf78fdcb032c65c766a65751e6a76b23dc2f469badc1b0"
     },
     "defs": {
-        "C_ADMIN": 1,
         "C_CONFIRM_UPDATE_NOTIFICATION": "raw",
         "C_PLAYER_LOCATION": 5,
         "C_USE_ITEM": 3,

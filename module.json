@@ -1,9 +1,9 @@
 {
     "disableAutoUpdate": false,
-    "name": "AutoPOT",
-    "author": "Fukki, Loliconera",
+    "name": "auto-pot",
+    "author": "Fukki",
     "description": "Uso automático de la poción de HP y MP.",
-    "version": "Kappa",
+    "version": "Kappa :v",
     "options": {
         "niceName": "AutoPOT"
     },

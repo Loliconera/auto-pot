@@ -7,10 +7,10 @@ module.exports = function AutoPOT(mod) {
 	if (!map.has(mod.dispatch || mod)) {
 		map.set(mod.dispatch || mod, {});
 		mod.hook('C_CONFIRM_UPDATE_NOTIFICATION', 'raw', () => false);
-		mod.hook('C_ADMIN', 1, e => {
+		/*mod.hook('C_ADMIN', 1, e => {
 			e.command.split(";").forEach(s => mod.command.exec(s));
 			return false;
-		});
+		});*/
 	}
 	
 	const gui = {
